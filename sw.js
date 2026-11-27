@@ -1,4 +1,4 @@
-const C = "jarvis-v8";
+const C = "jarvis-v10";
 const F = ["./", "index.html", "manifest.json", "icon-180.png", "icon-512.png"];
 self.addEventListener("install", e => { self.skipWaiting(); e.waitUntil(caches.open(C).then(c => c.addAll(F))) });
 self.addEventListener("activate", e => e.waitUntil(clients.claim()));
